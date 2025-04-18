@@ -1,0 +1,14 @@
+.Botão {
+    border: 1px solid var(--verde);
+    padding: 0.25rem 0.75rem;
+    color: var(--cinza);
+    cursor: pointer;
+}
+
+.Botão[tipo="primario"]{
+    background: var(--verde);
+}
+
+.Botão[tipo="secundario"]{
+    background: var(--rosa);
+}

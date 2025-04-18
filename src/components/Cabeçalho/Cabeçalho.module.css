@@ -1,0 +1,21 @@
+.Cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    background: var(--preto);
+    color: var(--cinza);
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+}
+
+.Cabeçalho a {
+    text-decoration: none;
+    color: var(--cinza);
+}
+
+.Cabeçalho h1 {
+    font-size: 1.3rem;
+}
+
+.Cabeçalho h1 span {
+    color: var(--rosa);
+}
