@@ -1,11 +1,12 @@
-const jsonServer = require('json-server');
+import jsonServer from 'json-server';
+
 const server = jsonServer.create();
 const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults();
 
-// Libera CORS manualmente
+// Middleware de CORS
 server.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*'); // <- aqui libera para todos os domínios
+  res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE');
   res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
   next();
